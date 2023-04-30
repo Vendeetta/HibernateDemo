@@ -34,9 +34,9 @@ public class Config implements WebMvcConfigurer {
         ComboPooledDataSource dataSource = new ComboPooledDataSource();
         try {
             dataSource.setDriverClass("org.postgresql.Driver");
-            dataSource.setJdbcUrl("jdbc:postgresql://localhost:5432/hiber_demo");
+            dataSource.setJdbcUrl("jdbc:postgresql://containers-us-west-115.railway.app:6771/railway");
             dataSource.setUser("postgres");
-            dataSource.setPassword("postgres");
+            dataSource.setPassword("dozpNiwgCz67fQjiIEIQ");
         } catch (PropertyVetoException e) {
             throw new RuntimeException(e);
         }
